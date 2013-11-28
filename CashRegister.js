@@ -142,4 +142,8 @@ function CashRegister() {
     function askForLogout() {
         //add username and password of employee
     }
+	
+	function newTest(){
+		
+	}
 }
