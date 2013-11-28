@@ -44,7 +44,6 @@ function CashRegister() {
         return item;
     }
 
-    
     var product = new Item("Milk", 0956292738, 4.95, "Dairy products", 23);
     
     function manuallyAddItem(name, price) {
@@ -165,8 +164,4 @@ function CashRegister() {
         //add username and password of employee
 		// return boolean
     }
-	
-	function newTest(){
-		
-	}
 }
