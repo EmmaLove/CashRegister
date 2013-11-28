@@ -3,6 +3,8 @@ function init() {
     if( !document &&  !document.getElementById ){ return; }
 }
 
+//hello
+
 function CashRegister() {
     var grandTotalAmout;
     
