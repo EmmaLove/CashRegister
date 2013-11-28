@@ -146,4 +146,5 @@ function CashRegister() {
 	function newTest(){
 		
 	}
+	//bernard 
 }
