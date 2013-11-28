@@ -120,7 +120,7 @@ function CashRegister() {
     }
     
     function processPaiement() {
-        //get amout given
+        //get amout given &&&
         //get bill total
         //given - total = change
         var amountGiven = document.getElementById("").value;
