@@ -137,26 +137,73 @@ function CashRegister() {
         //verify card number or name
 		// return string
     }
-    
-    function validatePaiement() {
-        //is paiementMethod accepted
-		//return boolean
-    }
-    
-    function processPaiement() {
-        //get amout given &&&
-        //get bill total
-        //given - total = change
-		//return string
-        var amountGiven = document.getElementById("").value;
-        return amountGiven - grandTotalAmout;
-    }
-    
+	
+	
     function refoundClientOrder(billnumber) {
         //get bill total
         //refound
 		// return integer
     }
+    
+    function validatePaiement() {
+        //is paiementMethod accepted
+		//return boolean
+    }
+	
+    /**
+     * Enters the payment received from the client.
+		 * give the number of dollars that we need to give to the client
+		 * give the number of quarters that we need to give to the client
+		 * give the number of dimes that we need to give to the client
+		 * give the number of nickels that we need to give to the client
+		 * give the number of pennies that we need to give to the client
+	 */
+     
+  	function enterPayment(dollars,quarters,dimes,nickels,pennies){
+        var payment = dollars + quarters*QUARTER_VALUE + dimes*DIME_VALUE +
+                nickels*NICKEL_VALUE + pennies*PENNY_VALUE;
+    }
+	
+	function giveChange(payment,grandTotalAmount) {
+        //get enterPayment
+        //get bill total
+        //payment - grandTotalAmount = change
+		//return int
+       
+        return payment - grandTotalAmount;//=change
+    }
+    function giveDollars(){
+        /**changeInDollars=(int)(change/100);
+        change=change-100;*/
+        return changeInDollars;
+    }
+    function giveQuarters(){
+        /**changeInQuarters=(int) (change/(QUARTER_VALUE*100));
+        change = (int) (change - (quarters*QUARTER_VALUE*100));*/
+        return changeInQuarters;
+    }
+    function giveDimes(){
+        /**changeInDimes = (int) (change/DIME_VALUE*100);
+        change=(int) (change-(dimes*DIME_VALUE*100));*/
+        return changeInDimes;
+    }
+    function giveNickels(){
+        /**changeInNickels = (int) (change/NICKEL_VALUE*100);
+        change = (int) (change - (nickels*NICKEL_VALUE*100));*/
+        return changeInNickels;
+    }
+    function givePennies(){
+        /**changeInPennies=(int) change;*/
+        return changeInPennies;
+    }
+    // Calling the function so we know how much we need to give back to the client
+    changeInPennies;
+    changeInQuarters;
+    changeInDollars;
+    changeInDimes;
+    changeInNickels;
+	
+	
     
     function printReceipt() {
         var printHeader = function() {
