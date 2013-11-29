@@ -71,10 +71,16 @@ function CashRegister() {
         //- promotions
     }
 
-    function Coupon(couponid, value, expirationdate) {
-        this.couponId = couponid;
-        this.value = value;
-        this.expirationdate = expirationdate;
+    function Coupon(code,name,combination,discount,percentage,quantitie,startingdate,expirationdate) {
+        this.code = code;// barcode number 
+		this.valid= true;//valid coupon 
+		this.name =name;//name for the coupon
+		this.combination=combination ; // some discount work with qt not by percentage mean if u buy 3 pen the 4 for free 
+		this.discount=discount;// discount on the price 
+		this.percentagediscount=percentagediscount; // discount work by percentage 	
+		this.quantite = qunatite;// how many copon/user
+		this.startingdate=startingdate;// first date for the discount 
+        this.expirationdate = expirationdate;//last date for the coupon 
         this.condition = function() {
             //validate the condition (compare the value)
             //return true or false
@@ -82,7 +88,7 @@ function CashRegister() {
     }
     
     var coupon1 = new Coupon(92383733, 3.50, 26122013);
-    
+     
     function validateCoupon() {
         if(coupon1.condition = true){
             
