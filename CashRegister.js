@@ -152,12 +152,27 @@ function CashRegister() {
 		// return integer
     }
     
-    function printSettings() {
-        //total includes taxes
-        //get the date / time
-        //get greetings
-        //get employee number
-		//return integer and string
+    function printReceipt() {
+        var printHeader = function() {
+            var printStoreInfo = function() {}
+            var printEmployeeInfo = function() {}
+            var printReceiptInfo = function() {}
+            var printDateTime = function() {}
+        }
+        
+        var printBody = function() {
+            var printItemList = function() {}
+            var printDiscounts = function() {}
+            var printSubtotal = function() {}
+            var printTaxes = function() {}
+            var printTotal = function() {}
+        }
+        
+        var printFooter = function() {
+            var printPaiementMethod = function() {}
+            var printPoints = function() {}
+            var printGreetings = function() {}
+        }
     }
     
     function askForLogout() {
