@@ -185,12 +185,5 @@ function CashRegister() {
         //add username and password of employee
 		// return boolean
     }
-<<<<<<< HEAD
 	
-	function newTest(){
-		
-	}
-	//bernard 
-=======
->>>>>>> 9501bb4a5cb96ac1a07f59d50554f1f114c45a89
 }
